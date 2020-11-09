@@ -1,0 +1,23 @@
+﻿<Window x:Class="CalculadoraBasica.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CalculadoraBasica"
+        mc:Ignorable="d"
+        Title="Calculadora Basica" Height="450" Width="800">
+    <Grid>
+        <TextBlock Text="Operador 1" Margin="11,10,699,379" />
+        <TextBlock Text="Operador 2" Margin="11,49,699,340" />
+        <TextBlock Text="Operando " Margin="11,89,699,301" />
+        <TextBlock Text="Resultado" Margin="11,130,699,261" />
+
+        <TextBox x:Name="operador1TextBox" Margin="115,10,527,379"/>
+        <TextBox x:Name="operador2TextBox" Margin="115,49,527,340"/>
+        <TextBox x:Name="operandoTextBox" Margin="115,89,527,301" TextChanged="operandoTextBox_TextChanged" />
+        <TextBox x:Name="resultadoTextBox" Margin="115,130,527,261" />
+
+        <Button x:Name="calcularButton" Content="Calcular" Margin="294,10,426,379" Click="calcularButton_Click" IsEnabled="False"/>
+        <Button x:Name="limpiarButton" Content="Limpiar" Margin="294,47,426,343" Click="limpiarButton_Click"/>
+    </Grid>
+</Window>
